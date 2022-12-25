@@ -18,26 +18,6 @@ public class LionTest {
     private Feline feline;
 
     @Test
-    public void doesHaveManeForMaleReturnsTrue() throws Exception {
-        Lion lion = new Lion("Самец", feline);
-        boolean expected = true;
-
-        boolean actual = lion.doesHaveMane();
-
-        assertEquals(actual, expected);
-    }
-
-    @Test
-    public void doesHaveManeForFemaleReturnsFalse() throws Exception {
-        Lion lion = new Lion("Самка", feline);
-        boolean expected = false;
-
-        boolean actual = lion.doesHaveMane();
-
-        assertEquals(actual, expected);
-    }
-
-    @Test
     public void unidentifiedSexTrownException(){
         Exception actualException = assertThrows(Exception.class, () -> new Lion("unknown", feline));
         String expectedException = "Используйте допустимые значения пола животного - самей или самка";
@@ -46,7 +26,7 @@ public class LionTest {
     }
 
     @Test
-    public void getKittensReturnsValidCoune() throws Exception {
+    public void getKittensReturnsValidCount() throws Exception {
         Lion lion = new Lion("Самка", feline);
         Mockito.when(feline.getKittens()).thenReturn(2);
         int expected = 2;

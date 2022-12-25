@@ -34,7 +34,7 @@ public class AnimalParametrizedTest {
         Animal animal = new Animal();
         List<String> actual = animal.getFood(typeOfAnimal);
         List<String> expected = foodList;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
 
     }
 

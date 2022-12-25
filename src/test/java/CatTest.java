@@ -23,7 +23,7 @@ public class CatTest {
 
         String actual = cat.getSound();
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 
@@ -31,11 +31,11 @@ public class CatTest {
     public void getFoodReturnsNotEmptyList() throws Exception {
         Cat cat = new Cat(predator);
         Mockito.when(predator.eatMeat()).thenReturn(List.of("Вискас","Педигри"));
-        int expected = 2;
+        List<String> expected = List.of("Вискас", "Педигри");
 
-        int actual = cat.getFood().size();
+        List<String> actual = cat.getFood();
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 
