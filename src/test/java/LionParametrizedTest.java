@@ -20,7 +20,7 @@ public class LionParametrizedTest {
     }
 
     @Parameterized.Parameters
-    public static Collection primeNumbers() {
+    public static Collection lions() {
         return Arrays.asList(new Object[][] {
                 { "Самец", true},
                 { "Самка", false}

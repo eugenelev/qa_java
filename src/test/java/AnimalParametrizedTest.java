@@ -21,7 +21,7 @@ public class AnimalParametrizedTest {
     }
 
     @Parameterized.Parameters
-    public static Collection primeNumbers() {
+    public static Collection animals() {
         return Arrays.asList(new Object[][] {
                 { "Травоядное", Arrays.asList("Трава", "Различные растения")},
                 { "Хищник", Arrays.asList("Животные", "Птицы", "Рыба")}
