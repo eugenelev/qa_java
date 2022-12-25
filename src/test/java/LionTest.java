@@ -33,7 +33,7 @@ public class LionTest {
 
         int actual = lion.getKittens();
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class LionTest {
 
         List<String> actual = lion.getFood();
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 }

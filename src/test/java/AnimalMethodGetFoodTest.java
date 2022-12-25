@@ -8,14 +8,14 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class AnimalParametrizedTest {
+public class AnimalMethodGetFoodTest {
     private String typeOfAnimal;
     private List<String> foodList;
 
 
 
 
-    public AnimalParametrizedTest(String typeOfAnimal, List<String> foodList) {
+    public AnimalMethodGetFoodTest(String typeOfAnimal, List<String> foodList) {
         this.typeOfAnimal = typeOfAnimal;
         this.foodList = foodList;
     }

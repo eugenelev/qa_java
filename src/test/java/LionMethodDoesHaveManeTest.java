@@ -8,13 +8,13 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class LionParametrizedTest {
+public class LionMethodDoesHaveManeTest {
     private String sex;
     private boolean isMane;
     private Feline feline;
 
 
-    public LionParametrizedTest(String sex, boolean isMane) {
+    public LionMethodDoesHaveManeTest(String sex, boolean isMane) {
         this.sex = sex;
         this.isMane = isMane;
     }

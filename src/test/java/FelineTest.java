@@ -21,7 +21,7 @@ public class FelineTest {
         String expected = "Кошачьи";
         String actual = feline.getFamily();
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class FelineTest {
         int actual = feline.getKittens(kittensCount);
         int expected = kittensCount;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 
@@ -41,7 +41,7 @@ public class FelineTest {
         int actual = feline.getKittens();
         int expected = 1;
 
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 
