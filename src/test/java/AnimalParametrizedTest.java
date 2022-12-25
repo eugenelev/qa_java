@@ -1,17 +1,11 @@
 import com.example.Animal;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
 
 @RunWith(Parameterized.class)
 public class AnimalParametrizedTest {

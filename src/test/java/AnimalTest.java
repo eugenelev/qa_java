@@ -1,8 +1,6 @@
 import com.example.Animal;
 import org.junit.Test;
-
 import java.util.List;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertEquals;
@@ -40,7 +38,7 @@ public class AnimalTest {
     public void getFoodTrownException() throws Exception {
         Animal animal = new Animal();
 
-        Exception actualException = assertThrows(Exception.class, () -> animal.getFood("dfg"));
+        Exception actualException = assertThrows(Exception.class, () -> animal.getFood("unknown"));
         String expectedException = "Неизвестный вид животного, используйте значение Травоядное или Хищник";
 
         assertEquals(expectedException, actualException.getMessage());
